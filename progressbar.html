@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPLATE PROGRESS BAR</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width:100vw;
+            height: 122px;
+            background-color: black;
+        }
+        main{
+            background-color: rgb(34, 121, 235);
+            width:100vw;
+            height: 100vh;
+        }
+        .progress{
+            background-color: red;
+            width: 100vw;
+            height: 2px;
+            animation: animate 3s ease-in-out 1s ;
+        }
+        @keyframes animate {
+            0%{
+                width:20vw;
+
+            }
+            50%{
+                width:50vw;
+            }
+            100%{
+                width: 100vw;
+            }
+
+            
+        }       
+
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header>
+
+    </header>
+    <main>
+        <div class="container"></div>
+        
+    </main>
+    
+</body>
+</html>
